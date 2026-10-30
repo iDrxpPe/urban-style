@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Style - Carrito</title>
+    <link rel="stylesheet" href="CSS/carrito.css">
+    <link rel="icon" type="image/png" href="MULTIMEDIA/IMAGES/logitoUS.png">
+</head>
+<body>
+    <header>
+        <nav>                       
+            <div>
+                <img class="imglogo" src="MULTIMEDIA/IMAGES/logo.png" alt="Urban Style">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="carrito.html">CARRITO DE COMPRAS</a></li>
+                <li><a href="login.html">MI CUENTA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor-carrito">
+        <section class="titulo-carrito">
+            <h1>Tu Carrito de Compras</h1>
+            <p>Revisa tus prendas seleccionadas antes de proceder al pago.</p>
+        </section>
+        <div class="grid-carrito">
+            <div class="lista-productos">
+                <div class="item-carrito">
+                    <img src="MULTIMEDIA/IMAGES/polo.jpg" alt="Polo Oversize Urban" class="img-producto">
+                    <div class="detalle-producto">
+                        <h3>Polo Urbano Oversize</h3>
+                        <p class="talla">Talla: L</p>
+                        <p class="precio">S/ 89.00</p>
+                    </div>
+                    <div class="cantidad-control">
+                        <label for="cant1">Cant:</label>
+                        <input type="number" id="cant1" value="1" min="1" max="10">
+                    </div>
+                    <button class="btn-eliminar" title="Eliminar producto">&times;</button>
+                </div>
+                <div class="item-carrito">
+                    <img src="MULTIMEDIA/IMAGES/hoodie.jpg" alt="Polera Hoodie Heavyweight Urban Style" class="img-producto">
+                    <div class="detalle-producto">
+                        <h3>Polera Hoodie Heavyweight</h3>
+                        <p class="talla">Talla: M</p>
+                        <p class="precio">S/ 139.00</p>
+                    </div>
+                    <div class="cantidad-control">
+                        <label for="cant2">Cant:</label>
+                        <input type="number" id="cant2" value="1" min="1" max="10">
+                    </div>
+                    <button class="btn-eliminar" title="Eliminar producto">&times;</button>
+                </div>
+            </div>
+            <div class="resumen-compra">
+                <h2>Resumen del Pedido</h2>
+                <div class="linea-resumen">
+                    <span>Subtotal</span>
+                    <span>S/ 228.00</span>
+                </div>
+                <div class="linea-resumen">
+                    <span>Envío a Lima / Provincias</span>
+                    <span>S/ 15.00</span>
+                </div>
+                <div class="linea-resumen total">
+                    <span>Total a Pagar</span>
+                    <span>S/ 243.00</span>
+                </div>
+                <button class="btn-checkout">PROCEDER AL PAGO</button>
+                <a href="tienda.html" class="seguir-comprando">← Seguir comprando</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="logo-footer">Urban Style</h2>
+        <p>© 2026 URBAN STYLE — Todos los derechos reservados</p>
+        <div class="links-footer">
+            <a href="#">Contacto</a>
+            <a href="https://wa.me/51900000000" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="#">Soporte</a>
+        </div>
+    </footer>
+</body>
+</html>

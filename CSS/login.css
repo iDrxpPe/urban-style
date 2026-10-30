@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #111111;
+    width: 100%;
+}
+
+body{
+    background-color: #fcfcfc;
+    color: #111111;
+    font-family: Montserrat;
+    line-height: 1.6;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 15px 50px;
+}
+
+.imglogo{
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.menu li{
+    padding: 0 10px;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.contenedor-cuenta {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;
+    flex: 1;
+}
+
+.titulo-cuenta {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-cuenta h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.titulo-cuenta p {
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+/* GRID DE AUTENTICACIÓN (LOGIN Y REGISTRO) */
+.grid-autenticacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.caja-auth {
+    background-color: #ffffff;
+    padding: 35px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+.caja-auth h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #222222;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+}
+
+.grupo-input label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-input input:focus {
+    border-color: #111111;
+}
+
+.btn-auth {
+    display: block;
+    width: 100%;
+    background-color: #0b0b0b;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-auth:hover {
+    background-color: #333333;
+}
+
+.btn-auth.secundario {
+    background-color: #222222;
+}
+
+.btn-auth.secundario:hover {
+    background-color: #444444;
+}
+
+footer{
+    background-color: #111111;
+    color: #888888;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 0.85rem;
+}
+
+footer p{
+    margin: 6px 0;
+}
+
+.logo-footer {
+    font-family: 'Lobster', cursive;
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.links-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.links-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.2s ease;
+}
+
+.links-footer a:hover {
+    color: #cccccc;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header,nav{
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .menu li a {
+        font-size: 0.8rem; 
+    }
+
+    .contenedor-cuenta {
+        width: 100% ;
+        max-width: 100% ;
+        padding: 0 15px ;
+        margin: 20px 0 ;
+    }
+
+    .grid-autenticacion {
+        grid-template-columns: 1fr ;
+        width: 100% ;
+        gap: 20px ;
+    }
+
+    .caja-auth {
+        width: 100% ;
+        padding: 20px ;
+    }
+
+    .grupo-input input, 
+    .btn-auth {
+        width: 100% ;
+        max-width: 100% ;
+    }
+}

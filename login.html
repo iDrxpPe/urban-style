@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Style - Mi cuenta</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="icon" type="image/png" href="MULTIMEDIA/IMAGES/logitoUS.png">
+</head>
+<body>
+    <header>
+        <nav>                       
+            <div>
+                <img class="imglogo" src="MULTIMEDIA/IMAGES/logo.png" alt="Urban Style">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="carrito.html">CARRITO DE COMPRAS</a></li>
+                <li><a href="login.html">MI CUENTA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor-cuenta">
+        <section class="titulo-cuenta">
+            <h1>Mi Cuenta</h1>
+            <p>Accede a tu panel para ver tus pedidos y datos personales.</p>
+        </section>
+        <div class="grid-autenticacion">
+            <div class="caja-auth">
+                <h2>Iniciar Sesión</h2>
+                <form action="#" method="POST">
+                    <div class="grupo-input">
+                        <label for="login-email">Correo Electrónico</label>
+                        <input type="email" id="login-email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="login-password">Contraseña</label>
+                        <input type="password" id="login-password" name="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-auth">INGRESAR</button>
+                </form>
+            </div>
+            <div class="caja-auth">
+                <h2>Crear Cuenta Nueva</h2>
+                <form action="#" method="POST">
+                    <div class="grupo-input">
+                        <label for="reg-nombre">Nombre Completo</label>
+                        <input type="text" id="reg-nombre" name="nombre" placeholder="Tu nombre..." required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="reg-email">Correo Electrónico</label>
+                        <input type="email" id="reg-email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="reg-password">Contraseña</label>
+                        <input type="password" id="reg-password" name="password" placeholder="Crea una contraseña" required>
+                    </div>
+                    <button type="submit" class="btn-auth secundario">REGISTRARME</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="logo-footer">Urban Style</h2>
+        <p>© 2026 URBAN STYLE — Todos los derechos reservados</p>
+        <div class="links-footer">
+            <a href="#">Contacto</a>
+            <a href="https://wa.me/51900000000" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="#">Soporte</a>
+        </div>
+    </footer>
+</body>
+</html>
